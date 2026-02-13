@@ -3,6 +3,8 @@ package com.oceanfleet.util;
 import com.oceanfleet.model.Vessel;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 
 public class VesselUtil {
     private List<Vessel> vesselList;
@@ -35,5 +37,24 @@ public class VesselUtil {
         }
         return null;
     }
+    // UC4: Retrieve high performance vessels
+    public List<Vessel> getHighPerformanceVessels() {
+        if (vesselList.isEmpty()) {
+            return new ArrayList<>();
+        }
+
+        // Find maximum average speed
+        double maxSpeed = vesselList.stream()
+                .mapToDouble(Vessel::getAverageSpeed)
+                .max()
+                .orElse(0.0);
+
+        // Return all vessels with maximum speed
+        return vesselList.stream()
+                .filter(vessel -> vessel.getAverageSpeed() == maxSpeed)
+                .collect(Collectors.toList());
+    }
+
+
 
 }
