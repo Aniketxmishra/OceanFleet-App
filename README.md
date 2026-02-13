@@ -20,7 +20,7 @@ OceanFleet is a console-based Java application that demonstrates Object-Oriented
 
 
 
-\## Concepts Used
+## Concepts Used
 
 
 
@@ -40,7 +40,7 @@ OceanFleet is a console-based Java application that demonstrates Object-Oriented
 
 \- Java
 
-\- Git \& GitHub
+- Git \& GitHub
 
 
 
