@@ -1,4 +1,4 @@
-\# OceanFleet App
+# OceanFleet App
 
 
 
@@ -6,7 +6,7 @@ OceanFleet is a console-based Java application that demonstrates Object-Oriented
 
 
 
-\## Features
+## Features
 
 
 
@@ -30,11 +30,11 @@ OceanFleet is a console-based Java application that demonstrates Object-Oriented
 
 \- Console-based application
 
-\- GitFlow with feature branches
+- GitFlow with feature branches
 
 
 
-\## Tech Stack
+## Tech Stack
 
 
 
